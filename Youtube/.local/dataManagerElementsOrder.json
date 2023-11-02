@@ -11,19 +11,11 @@
     {
       "Path": "Main.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": [],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Input.xaml",
-      "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "retryIntroduceEmail&Flowchart_1",
-        "verifiedUserEmail&Flowchart_1",
+        "isEmailValid&Flowchart_1",
+        "wantsOnEmail&Flowchart_1",
         "userEmail&Flowchart_1",
-        "wantsOnEmail&Flowchart_1"
+        "retryIntroduceEmail&Flowchart_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
