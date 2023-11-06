@@ -12,6 +12,12 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "addMoreLinks&Flowchart_1",
+        "youtubeLinkList&Flowchart_1",
+        "linkCount&Flowchart_1",
+        "isYoutubeLinkValid&Flowchart_1",
+        "retryYoutubeLink&Flowchart_1",
+        "youtubeLink&Flowchart_1",
         "isEmailValid&Flowchart_1",
         "wantsOnEmail&Flowchart_1",
         "userEmail&Flowchart_1",
