@@ -12,6 +12,8 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "linkExists&Flowchart_1",
+        "outputVideo&Flowchart_1",
         "addMoreLinks&Flowchart_1",
         "youtubeLinkList&Flowchart_1",
         "linkCount&Flowchart_1",
