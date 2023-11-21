@@ -151,7 +151,11 @@
   <Sequence DisplayName="CommentsClassification" sap:VirtualizedContainerService.HintSize="572,2207" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="requestLink" />
-      <Variable x:TypeArguments="x:String" Default="AIzaSyDPYfoypkMKPMG-enTW1VDj5Lol57H0Jpw" Name="youtubeApiKey" />
+      <Variable x:TypeArguments="x:String" Name="youtubeApiKey">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" Value="" />
+        </Variable.Default>
+      </Variable>
       <Variable x:TypeArguments="scg:List(x:String)" Name="comments" />
       <Variable x:TypeArguments="njl:JObject" Name="jsonComments" />
       <Variable x:TypeArguments="x:String" Name="fetchedComments" />
@@ -216,7 +220,7 @@
               </ui:HttpClient.UrlSegments>
             </ui:HttpClient>
             <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Create JSON comments" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[jsonComments]" JsonString="[fetchedComments]" />
-            <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim tokenItems As JToken = fetchedComments.SelectToken(&quot;items&quot;)&#xD;&#xA;&#xD;&#xA;comments = New List(Of String)&#xD;&#xA;&#xD;&#xA;For Each item In tokenItems&#xD;&#xA;&#x9;Dim text As String = item.SelectToken(&quot;snippet&quot;).SelectToken(&quot;topLevelComment&quot;).&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;SelectToken(&quot;snippet&quot;).SelectToken(&quot;textOriginal&quot;).ToString&#xD;&#xA;&#x9;comments.Add(text)&#xD;&#xA;Next&#xD;&#xA;" DisplayName="Get comments from json" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+            <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim tokenItems As JToken = fetchedComments.SelectToken(&quot;items&quot;)&#xA;&#xA;comments = New List(Of String)&#xA;&#xA;For Each item In tokenItems&#xA;&#x9;Dim text As String = item.SelectToken(&quot;snippet&quot;).SelectToken(&quot;topLevelComment&quot;).&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;SelectToken(&quot;snippet&quot;).SelectToken(&quot;textOriginal&quot;).ToString&#xA;&#x9;comments.Add(text)&#xA;Next&#xA;" DisplayName="Get comments from json" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
               <ui:InvokeCode.Arguments>
                 <InArgument x:TypeArguments="njl:JObject" x:Key="fetchedComments">[jsonComments]</InArgument>
                 <OutArgument x:TypeArguments="scg:List(x:String)" x:Key="comments">[comments]</OutArgument>
@@ -242,7 +246,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uoia:GenerateChatCompletion ActivityInstanceId="116c76e2-a77b-4b49-bd83-ca1ba0584b48" BindingsVersion="2.1" BusinessEntityName="Generate Chat Completion" ConfiguredBusinessEntity="generateChatCompletion" ConnectionId="aa75b871-f46d-413e-bfd8-b10d818e43d1" Connector="uipath-openai-openai" CrudOperation="Create" DesignConnectionEnabled="True" DisplayName="Classify the comment" sap:VirtualizedContainerService.HintSize="334,152" sap2010:WorkflowViewState.IdRef="GenerateChatCompletion_1">
+                    <uoia:GenerateChatCompletion Language="{x:Null}" ActivityInstanceId="116c76e2-a77b-4b49-bd83-ca1ba0584b48" BindingsVersion="2.1" BusinessEntityName="Generate Chat Completion" ConfiguredBusinessEntity="generateChatCompletion" ConnectionId="aa75b871-f46d-413e-bfd8-b10d818e43d1" Connector="uipath-openai-openai" CrudOperation="Create" DesignConnectionEnabled="True" DisplayName="Classify the comment" sap:VirtualizedContainerService.HintSize="334,152" sap2010:WorkflowViewState.IdRef="GenerateChatCompletion_1">
                       <uoia:GenerateChatCompletion.BusinessEntity>
                         <uibi:BusinessEntity Metadata="{x:Reference __ReferenceID14}" Name="generateChatCompletion">
                           <uibi:BusinessEntity.AllFields>
@@ -476,15 +480,9 @@
                     </uoia:GenerateChatCompletion>
                     <ui:InvokeCode ContinueOnError="{x:Null}" Code="commentsClassifications.Add(currentComment, classification)" DisplayName="Add classification to output" sap:VirtualizedContainerService.HintSize="334,165" sap2010:WorkflowViewState.IdRef="InvokeCode_3">
                       <ui:InvokeCode.Arguments>
-                        <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="commentsClassifications">
-                          <VisualBasicReference x:TypeArguments="scg:Dictionary(x:String, x:String)" ExpressionText="auxDict" />
-                        </InOutArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="classification">
-                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="commentClassification" />
-                        </InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="currentComment">
-                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="currentComment" />
-                        </InArgument>
+                        <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="commentsClassifications">[auxDict]</InOutArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="classification">[commentClassification]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="currentComment">[currentComment]</InArgument>
                       </ui:InvokeCode.Arguments>
                     </ui:InvokeCode>
                   </Sequence>
@@ -493,12 +491,8 @@
             </ui:ForEach>
             <ui:InvokeCode ContinueOnError="{x:Null}" Code="commentsClassificationList.Add(classificationToAdd)" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="InvokeCode_4">
               <ui:InvokeCode.Arguments>
-                <InOutArgument x:TypeArguments="scg:List(scg:Dictionary(x:String, x:String))" x:Key="commentsClassificationList">
-                  <VisualBasicReference x:TypeArguments="scg:List(scg:Dictionary(x:String, x:String))" ExpressionText="commentsClassificationList" />
-                </InOutArgument>
-                <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="classificationToAdd">
-                  <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:String)" ExpressionText="auxDict" />
-                </InArgument>
+                <InOutArgument x:TypeArguments="scg:List(scg:Dictionary(x:String, x:String))" x:Key="commentsClassificationList">[commentsClassificationList]</InOutArgument>
+                <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="classificationToAdd">[auxDict]</InArgument>
               </ui:InvokeCode.Arguments>
             </ui:InvokeCode>
           </Sequence>
