@@ -4,6 +4,7 @@
   "description": "Youtube comments classifications on positive, neutral and negative reactions",
   "main": "Main.xaml",
   "dependencies": {
+    "ReportGeneration": "[2.0.2]",
     "UiPath.Excel.Activities": "[2.22.2]",
     "UiPath.IntegrationService.Activities": "[1.0.2]",
     "UiPath.Mail.Activities": "[1.21.1]",

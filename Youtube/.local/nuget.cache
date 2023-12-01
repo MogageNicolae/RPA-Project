@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2WNCLPKOiw9uVIWxKSRPZp/d4fw2m7ikdfIXHlDyCr4LYSKDoUpzIsv/mYxFU0+X139hrswPkFp0As9j/pnWpg==",
+  "dgSpecHash": "PBaEWTnqXs6f75GqVma8bbmeJSljygQVKWH2Im415m1vugGwSvY9TiZqlO0rl57C45ReAw8dhtWWsF+OxlGBCg==",
   "success": true,
   "projectFilePath": "C:\\GIT\\RPA-Project\\Youtube\\.local\\",
   "expectedPackageFiles": [
@@ -97,6 +97,8 @@
     "C:\\Users\\marti\\.nuget\\packages\\polly.contrib.waitandretry\\1.1.1\\polly.contrib.waitandretry.1.1.1.nupkg.sha512",
     "C:\\Users\\marti\\.nuget\\packages\\polly.extensions.http\\3.0.0\\polly.extensions.http.3.0.0.nupkg.sha512",
     "C:\\Users\\marti\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",
+    "C:\\Users\\marti\\.nuget\\packages\\reportgeneration\\2.0.2\\reportgeneration.2.0.2.nupkg.sha512",
+    "C:\\Users\\marti\\.nuget\\packages\\reportgeneration.library.runtime\\2.0.2\\reportgeneration.library.runtime.2.0.2.nupkg.sha512",
     "C:\\Users\\marti\\.nuget\\packages\\restsharp\\106.15.0\\restsharp.106.15.0.nupkg.sha512",
     "C:\\Users\\marti\\.nuget\\packages\\runtime.any.system.collections\\4.3.0\\runtime.any.system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\marti\\.nuget\\packages\\runtime.any.system.diagnostics.tools\\4.3.0\\runtime.any.system.diagnostics.tools.4.3.0.nupkg.sha512",
