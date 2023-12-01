@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1047,2272</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1234,2272</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>CommentsClassification_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -151,11 +151,7 @@
   <Sequence DisplayName="CommentsClassification" sap:VirtualizedContainerService.HintSize="572,2207" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="requestLink" />
-      <Variable x:TypeArguments="x:String" Name="youtubeApiKey">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String" Value="" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="AIzaSyCZdDS_X0Krb9AomAaL6swoWztNEZzVpDk" Name="youtubeApiKey" />
       <Variable x:TypeArguments="scg:List(x:String)" Name="comments" />
       <Variable x:TypeArguments="njl:JObject" Name="jsonComments" />
       <Variable x:TypeArguments="x:String" Name="fetchedComments" />
@@ -246,7 +242,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uoia:GenerateChatCompletion ActivityInstanceId="116c76e2-a77b-4b49-bd83-ca1ba0584b48" BindingsVersion="2.1" BusinessEntityName="Generate Chat Completion" ConfiguredBusinessEntity="generateChatCompletion" ConnectionId="aa75b871-f46d-413e-bfd8-b10d818e43d1" Connector="uipath-openai-openai" CrudOperation="Create" DesignConnectionEnabled="True" DisplayName="Classify the comment" sap:VirtualizedContainerService.HintSize="334,152" sap2010:WorkflowViewState.IdRef="GenerateChatCompletion_1">
+                    <uoia:GenerateChatCompletion ActivityInstanceId="116c76e2-a77b-4b49-bd83-ca1ba0584b48" BindingsVersion="2.1" BusinessEntityName="Generate Chat Completion" ConfiguredBusinessEntity="generateChatCompletion" ConnectionId="939d5b7e-5810-4e93-9ea7-3f96738c88b1" Connector="uipath-openai-openai" CrudOperation="Create" DesignConnectionEnabled="True" DisplayName="Classify the comment" sap:VirtualizedContainerService.HintSize="334,152" sap2010:WorkflowViewState.IdRef="GenerateChatCompletion_1">
                       <uoia:GenerateChatCompletion.BusinessEntity>
                         <uibi:BusinessEntity Name="generateChatCompletion">
                           <uibi:BusinessEntity.AllFields>
@@ -449,7 +445,7 @@
                         <scg:Dictionary x:TypeArguments="x:String, scg:List(uiisi:LookupValue)" />
                       </uoia:GenerateChatCompletion.CachedLookupValues>
                       <uoia:GenerateChatCompletion.DesignConnectionRequest>
-                        <uiisi:ConnectionParameters AuthType="ElementInstance" ConnectionId="aa75b871-f46d-413e-bfd8-b10d818e43d1" ConnectionName="OpenAI" ConnectorKey="uipath-openai-openai">
+                        <uiisi:ConnectionParameters AuthType="ElementInstance" ConnectionId="939d5b7e-5810-4e93-9ea7-3f96738c88b1" ConnectionName="OpenAI" ConnectorKey="uipath-openai-openai">
                           <uiisi:ConnectionParameters.TelemetryInfo>
                             <uiisi:TelemetryInfo ActivityPack="UiPath.OpenAI.IntegrationService.Activities" ActivityPackVersion="6.1.0" Source="StudioDesktop" />
                           </uiisi:ConnectionParameters.TelemetryInfo>

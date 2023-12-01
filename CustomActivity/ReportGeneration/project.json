@@ -1,17 +1,14 @@
 {
-  "name": "Youtube",
-  "projectId": "07c1a4ce-a0da-43f8-a3a8-4de7a9664964",
-  "description": "Youtube comments classifications on positive, neutral and negative reactions",
-  "main": "Main.xaml",
+  "name": "ReportGeneration",
+  "projectId": "09a71b7c-0522-4ecf-9466-aae1d9af7264",
+  "description": "A software library that produces an Excel report, utilizing input data containing video names and a dictionary pairing comments with corresponding sentiments. The generated report provides statistical insights into the distribution of sentiments.",
+  "main": "NewActivity.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.22.2]",
-    "UiPath.IntegrationService.Activities": "[1.0.2]",
-    "UiPath.Mail.Activities": "[1.21.1]",
-    "UiPath.OpenAI.IntegrationService.Activities": "[6.1.0]",
-    "UiPath.System.Activities": "[23.10.2]",
-    "UiPath.Testing.Activities": "[23.10.0]",
-    "UiPath.UIAutomation.Activities": "[23.10.3]",
-    "UiPath.WebAPI.Activities": "[1.18.0]"
+    "UiPath.Excel.Activities": "2.22.2",
+    "UiPath.Mail.Activities": "1.21.1",
+    "UiPath.System.Activities": "23.10.2",
+    "UiPath.Testing.Activities": "23.10.0",
+    "UiPath.UIAutomation.Activities": "23.10.3"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -38,7 +35,7 @@
   },
   "designOptions": {
     "projectProfile": "Developement",
-    "outputType": "Process",
+    "outputType": "Library",
     "libraryOptions": {
       "includeOriginalXaml": false,
       "privateWorkflows": []
@@ -47,18 +44,10 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
-    "modernBehavior": false,
+    "modernBehavior": true,
     "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
-  "entryPoints": [
-    {
-      "filePath": "Main.xaml",
-      "uniqueId": "55bf8e38-562b-4151-ade6-6750096e3afc",
-      "input": [],
-      "output": []
-    }
-  ],
   "isTemplate": false,
   "templateProjectData": {},
   "publishData": {},
