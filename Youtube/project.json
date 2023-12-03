@@ -1,9 +1,10 @@
 {
   "name": "Youtube",
-  "projectId": "4983fa1a-f39e-4fc6-a6c3-4e2597835beb",
+  "projectId": "07c1a4ce-a0da-43f8-a3a8-4de7a9664964",
   "description": "Youtube comments classifications on positive, neutral and negative reactions",
   "main": "Main.xaml",
   "dependencies": {
+    "ReportGeneration": "[2.0.2]",
     "UiPath.Excel.Activities": "[2.22.2]",
     "UiPath.IntegrationService.Activities": "[1.0.2]",
     "UiPath.Mail.Activities": "[1.21.1]",

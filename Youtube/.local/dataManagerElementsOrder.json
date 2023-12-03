@@ -12,6 +12,8 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "youtubeNameList&Flowchart_1",
+        "excelNames&Flowchart_1",
         "commentsClassificationList&Flowchart_1",
         "linkExists&Flowchart_1",
         "outputVideo&Flowchart_1",
