@@ -1,17 +1,16 @@
 {
   "name": "Youtube",
-  "projectId": "07c1a4ce-a0da-43f8-a3a8-4de7a9664964",
   "description": "Youtube comments classifications on positive, neutral and negative reactions",
   "main": "Main.xaml",
   "dependencies": {
-    "ReportGeneration": "[2.0.2]",
-    "UiPath.Excel.Activities": "[2.22.2]",
+    "ReportGeneration": "[2.0.10]",
+    "UiPath.Excel.Activities": "[2.22.3]",
     "UiPath.IntegrationService.Activities": "[1.0.2]",
     "UiPath.Mail.Activities": "[1.21.1]",
     "UiPath.OpenAI.IntegrationService.Activities": "[6.1.0]",
-    "UiPath.System.Activities": "[23.10.2]",
+    "UiPath.System.Activities": "[23.10.3]",
     "UiPath.Testing.Activities": "[23.10.0]",
-    "UiPath.UIAutomation.Activities": "[23.10.3]",
+    "UiPath.UIAutomation.Activities": "[23.10.7]",
     "UiPath.WebAPI.Activities": "[1.18.0]"
   },
   "webServices": [],
@@ -48,8 +47,7 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
-    "modernBehavior": false,
-    "saveToCloud": false
+    "modernBehavior": false
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
