@@ -31,6 +31,26 @@
       ],
       "ConstantsSectionElementsOrder": null,
       "AddedNamespaces": null
+    },
+    {
+      "Path": "Statistics.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "total&Sequence_1",
+        "positiveString&Sequence_4",
+        "negativeString&Sequence_6",
+        "neutralString&Sequence_8"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "positive",
+        "negative",
+        "neutral",
+        "positivePercentage",
+        "negativePercentage",
+        "neutralPercentage"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
     }
   ]
 }
