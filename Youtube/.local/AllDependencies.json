@@ -1778,15 +1778,15 @@
           }
         }
       },
-      "ReportGeneration/2.0.11": {
+      "ReportGeneration/2.0.16": {
         "type": "package",
         "dependencies": {
-          "ReportGeneration.Library.Runtime": "2.0.11",
+          "ReportGeneration.Library.Runtime": "2.0.16",
           "UiPath.Excel.Activities": "2.22.3",
           "UiPath.System.Activities": "23.10.3"
         }
       },
-      "ReportGeneration.Library.Runtime/2.0.11": {
+      "ReportGeneration.Library.Runtime/2.0.16": {
         "type": "package",
         "dependencies": {
           "UiPath.Excel.Activities": "2.22.3",
@@ -1797,8 +1797,8 @@
         },
         "runtime": {
           "lib/net6.0-windows7.0/ReportGeneration.dll": {},
-          "lib/net6.0-windows7.0/ReportGeneration_Expressions_32578014.dll": {},
-          "lib/net6.0-windows7.0/ReportGeneration_Expressions_65192075.dll": {}
+          "lib/net6.0-windows7.0/ReportGeneration_Expressions_64988136.dll": {},
+          "lib/net6.0-windows7.0/ReportGeneration_Expressions_65101548.dll": {}
         },
         "contentFiles": {
           "contentFiles/any/any/_._": {
@@ -7378,15 +7378,15 @@
           }
         }
       },
-      "ReportGeneration/2.0.11": {
+      "ReportGeneration/2.0.16": {
         "type": "package",
         "dependencies": {
-          "ReportGeneration.Library.Runtime": "2.0.11",
+          "ReportGeneration.Library.Runtime": "2.0.16",
           "UiPath.Excel.Activities": "2.22.3",
           "UiPath.System.Activities": "23.10.3"
         }
       },
-      "ReportGeneration.Library.Runtime/2.0.11": {
+      "ReportGeneration.Library.Runtime/2.0.16": {
         "type": "package",
         "dependencies": {
           "UiPath.Excel.Activities": "2.22.3",
@@ -7397,8 +7397,8 @@
         },
         "runtime": {
           "lib/net6.0-windows7.0/ReportGeneration.dll": {},
-          "lib/net6.0-windows7.0/ReportGeneration_Expressions_32578014.dll": {},
-          "lib/net6.0-windows7.0/ReportGeneration_Expressions_65192075.dll": {}
+          "lib/net6.0-windows7.0/ReportGeneration_Expressions_64988136.dll": {},
+          "lib/net6.0-windows7.0/ReportGeneration_Expressions_65101548.dll": {}
         },
         "contentFiles": {
           "contentFiles/any/any/_._": {
@@ -14056,10 +14056,10 @@
         "portable.bouncycastle.nuspec"
       ]
     },
-    "ReportGeneration/2.0.11": {
-      "sha512": "NN3j9cw5RhRpr/CLwO0s/nQ/LUTsR2/iA+SAtujQ0+Vi6M8yW0+eqUn9kk/XWvW9tZ9xmjzmeDgtdzbdZXu8NQ==",
+    "ReportGeneration/2.0.16": {
+      "sha512": "NLtRGFHb1KzTJQOsC+1bTwveH3Swl5JqK8iwFjce0IwzlbweyPz6Pd+dhbT9xA1/+kEKHQMHbPkbjlJdbzzw1w==",
       "type": "package",
-      "path": "reportgeneration/2.0.11",
+      "path": "reportgeneration/2.0.16",
       "files": [
         ".nupkg.metadata",
         "content/.project/PackageBindingsMetadata.json",
@@ -14081,14 +14081,14 @@
         "content/bindings.json",
         "content/bindings_v2.json",
         "content/project.json",
-        "reportgeneration.2.0.11.nupkg.sha512",
+        "reportgeneration.2.0.16.nupkg.sha512",
         "reportgeneration.nuspec"
       ]
     },
-    "ReportGeneration.Library.Runtime/2.0.11": {
-      "sha512": "sQ8BsuNnKDorYBGymTKahhWAgKMOB8o8jlaxf4Gn83Tl4foikmKOSYVOoBvrX/Pe6sYwMwrY8Tjj7Lo+Rx2qNg==",
+    "ReportGeneration.Library.Runtime/2.0.16": {
+      "sha512": "MHsPpCAL5QzfzYIwpGPPKhxBQHp9oV20Mcl+lfsFRYX3Oa9i9InT3JEbcSv/9wtKVACklsredL59IvBOLvURRA==",
       "type": "package",
-      "path": "reportgeneration.library.runtime/2.0.11",
+      "path": "reportgeneration.library.runtime/2.0.16",
       "files": [
         ".nupkg.metadata",
         "content/.settings/Release/settings-1a5b880a.json",
@@ -14104,9 +14104,9 @@
         "contentFiles/any/any/.objects/.metadata",
         "contentFiles/any/any/.objects/.type",
         "lib/net6.0-windows7.0/ReportGeneration.dll",
-        "lib/net6.0-windows7.0/ReportGeneration_Expressions_32578014.dll",
-        "lib/net6.0-windows7.0/ReportGeneration_Expressions_65192075.dll",
-        "reportgeneration.library.runtime.2.0.11.nupkg.sha512",
+        "lib/net6.0-windows7.0/ReportGeneration_Expressions_64988136.dll",
+        "lib/net6.0-windows7.0/ReportGeneration_Expressions_65101548.dll",
+        "reportgeneration.library.runtime.2.0.16.nupkg.sha512",
         "reportgeneration.library.runtime.nuspec"
       ]
     },
@@ -22402,7 +22402,7 @@
   "projectFileDependencyGroups": {
     "": [],
     "net6.0-windows7.0": [
-      "ReportGeneration >= 2.0.11 <= 2.0.11",
+      "ReportGeneration >= 2.0.16 <= 2.0.16",
       "UiPath.Excel.Activities >= 2.22.3 <= 2.22.3",
       "UiPath.IntegrationService.Activities >= 1.0.2 <= 1.0.2",
       "UiPath.Mail.Activities >= 1.21.1 <= 1.21.1",
@@ -22414,19 +22414,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\OTI\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\marti\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "Youtube",
       "projectName": "Youtube",
-      "projectPath": "D:\\Oti\\Facultate\\Materii\\RPA\\RPA-Project\\Youtube\\.local",
-      "packagesPath": "C:\\Users\\OTI\\.nuget\\packages\\",
-      "outputPath": "D:\\Oti\\Facultate\\Materii\\RPA\\RPA-Project\\Youtube\\.local",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ]
+      "projectPath": "C:\\GIT\\RPA-Project\\Youtube\\.local",
+      "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
+      "outputPath": "C:\\GIT\\RPA-Project\\Youtube\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
@@ -22434,7 +22430,7 @@
           "ReportGeneration": {
             "include": "Runtime",
             "target": "Package",
-            "version": "[2.0.11, 2.0.11]"
+            "version": "[2.0.16, 2.0.16]"
           },
           "UiPath.Excel.Activities": {
             "include": "Runtime",
@@ -22477,7 +22473,7 @@
             "version": "[1.18.0, 1.18.0]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\marti\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {

@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1203,6527</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1076,6683</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -110,9 +110,10 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPathTeam.Excel.Extensions.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="860,6462" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="860,6618" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="resultDT" />
     </Sequence.Variables>
@@ -121,13 +122,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="798,6351" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="798,6507" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="764,6264" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="764,6420" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Name="index" />
             </Sequence.Variables>
@@ -136,13 +137,13 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="702,6153" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="Report.xlsx">
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="702,6309" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="Report.xlsx">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="668,5884" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="668,6040" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="ue:ISheetRef" Name="manageSheet" />
                       <Variable x:TypeArguments="x:String" Name="name" />
@@ -198,13 +199,13 @@
                         <InArgument x:TypeArguments="x:Int32">0</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="606,4373" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[youtubeNameList]">
+                    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="606,4529" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[youtubeNameList]">
                       <ui:ForEach.Body>
                         <ActivityAction x:TypeArguments="x:String">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:String" Name="sheetName" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,4187" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,4343" sap2010:WorkflowViewState.IdRef="Sequence_5">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="ue:ISheetRef" Name="currentSheet" />
                               <Variable x:TypeArguments="x:String" Name="positivePercentage" />
@@ -222,7 +223,7 @@
                                 <OutArgument x:TypeArguments="x:String">[name]</OutArgument>
                               </Assign.To>
                               <Assign.Value>
-                                <InArgument x:TypeArguments="x:String">[system.Text.RegularExpressions.Regex.Replace(sheetName, "[\\/\?\*\[\]]", "")]</InArgument>
+                                <InArgument x:TypeArguments="x:String">[system.Text.RegularExpressions.Regex.Replace(sheetName, "[\\/\?\*\[\]\:]", "")]</InArgument>
                               </Assign.Value>
                             </Assign>
                             <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_1">
@@ -525,6 +526,7 @@
                             <ueab:WriteCellX Cell="[Excel.Sheet(name).Cell(&quot;E3&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="510,159" sap2010:WorkflowViewState.IdRef="WriteCellX_10" Value="[negativePercentage]" />
                             <ueab:WriteCellX Cell="[Excel.Sheet(name).Cell(&quot;D4&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="510,159" sap2010:WorkflowViewState.IdRef="WriteCellX_11" Value="[&quot;Neutral&quot;]" />
                             <ueab:WriteCellX Cell="[Excel.Sheet(name).Cell(&quot;E4&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="510,159" sap2010:WorkflowViewState.IdRef="WriteCellX_12" Value="[neutralPercentage]" />
+                            <ueab:AutoFitX Columns="True" DisplayName="Autofit Range" sap:VirtualizedContainerService.HintSize="510,116" sap2010:WorkflowViewState.IdRef="AutoFitX_1" Range="[Excel.Sheet(name)]" Rows="False" />
                             <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_6">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Int32">[index]</OutArgument>
@@ -538,7 +540,7 @@
                       </ui:ForEach.Body>
                     </ui:ForEach>
                     <ueab:DeleteSheetX DisplayName="Delete Sheet" sap:VirtualizedContainerService.HintSize="606,90" sap2010:WorkflowViewState.IdRef="DeleteSheetX_2" Sheet="[manageSheet]" />
-                    <ueab:SaveExcelFileAsX DisplayName="Save Excel File As" FilePath="D:\Oti\Facultate\Materii\RPA\RPA-Project\Youtube.xlsx" sap:VirtualizedContainerService.HintSize="606,207" sap2010:WorkflowViewState.IdRef="SaveExcelFileAsX_2" SaveAsFileType="OpenXmlWorkbook" Workbook="[Excel]" />
+                    <ueab:SaveExcelFileAsX DisplayName="Save Excel File As" FilePath="C:\GIT\RPA-Project\Youtube.xlsx" sap:VirtualizedContainerService.HintSize="606,207" sap2010:WorkflowViewState.IdRef="SaveExcelFileAsX_2" SaveAsFileType="OpenXmlWorkbook" Workbook="[Excel]" />
                   </Sequence>
                 </ActivityAction>
               </ueab:ExcelApplicationCard.Body>

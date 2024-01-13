@@ -9554,19 +9554,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\OTI\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\marti\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "ReportGeneration",
       "projectName": "ReportGeneration",
-      "projectPath": "D:\\Oti\\Facultate\\Materii\\RPA\\RPA-Project\\CustomActivity\\ReportGeneration\\.local",
-      "packagesPath": "C:\\Users\\OTI\\.nuget\\packages\\",
-      "outputPath": "D:\\Oti\\Facultate\\Materii\\RPA\\RPA-Project\\CustomActivity\\ReportGeneration\\.local",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ]
+      "projectPath": "C:\\GIT\\RPA-Project\\CustomActivity\\ReportGeneration\\.local",
+      "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
+      "outputPath": "C:\\GIT\\RPA-Project\\CustomActivity\\ReportGeneration\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
@@ -9582,7 +9578,7 @@
             "version": "[23.10.3, 23.10.3]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\marti\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {
